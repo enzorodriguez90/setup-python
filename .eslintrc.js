@@ -1,5 +1,7 @@
 // This is a reusable configuration file copied from https://github.com/actions/reusable-workflows/tree/main/reusable-configurations. Please don't make changes to this file as it's the subject of an automatic update.
-export const extends = [
+modu
+le.exports = {
+  extends: [
   'eslint:recommended',
   'plugin:@typescript-eslint/recommended',
   'plugin:eslint-plugin-jest/recommended',
@@ -29,8 +31,8 @@ export const rules = {
   'no-control-regex': 'off',
   'no-constant-condition': ['error', { checkLoops: false }],
   'node/no-extraneous-import': 'error'
-};
-export const overrides = [
+  },
+  overrides: [
   {
     files: ['**/*{test,spec}.ts'],
     rules: {
